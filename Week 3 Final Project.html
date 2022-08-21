@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgba(253, 202, 0, 0.096);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      color: rgba(175, 40, 233, 0.886);
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #442e3e;
+    }
+
+    img {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 35px 70px 20px;
+      line-height: 35px;
+      color: #1b0c19;
+    }
+
+    span {
+      font-size: 22px;
+      font-weight: bold;
+      margin-left: 20px;
+      padding: 0 5px;
+      color: rgb(247, 246, 247);
+      background-color: #612b5352;
+      border-radius: 3px;
+    }
+
+    hr {
+      margin: 15px 70px;
+    }
+
+    a {
+      margin-left: 70px;
+      color: #150f14;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      text-decoration: underline white;
+    }
+
+    .container {
+      width: 45%;
+      height: 100%;
+      margin: 30px auto 50px;
+      padding: 40px 0;
+      background: linear-gradient(to top, #d299c2 0%, #fdf5bf 100%) no-repeat;
+      border-radius: 10px;
+    }
+
+    .text {
+      margin: 10px auto;
+    }
+
+    .btn {
+      margin: 20px 0 20px;
+    }
+
+    .play-button {
+      display: block;
+      margin: 0 auto;
+      padding: 20px 40px;
+      color: rgb(233, 220, 248);
+      font-size: 20px;
+      background-color: rgba(80, 23, 116, 0.786);
+      border: 1px solid #885df1;
+      border-radius: 35px;
+      box-shadow: rgb(37 39 100 / 30%) 0px 8px 10px 0;
+      transition: all 200ms ease;
+      cursor: pointer;
+    }
+
+    .play-button:hover {
+      color: rgba(83, 13, 127, 0.853);
+      background-color: rgba(252, 250, 253, 0.919);
+    }
+
+    .description {
+      margin-bottom: 0;
+      text-align: center;
+      color: rgba(64, 11, 97, 0.853);
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-container">
+        <h1>
+          I love to play Hearthstone 😎
+        </h1>
+        <h2>
+          Especially Hearthstone Battlegrounds
+        </h2>
+      </div>
+    </header>
+
+    <hr>
+    <img src="https://i0.wp.com/gamedva.com/wp-content/uploads/Hearthstone.jpg?w=800&ssl=1" alt="hearthstone battlegrounds">
+    <hr>
+    <p>
+      <span>Hearthstone</span> is a free-to-play online digital collectible card game developed and published by
+      <strong>Blizzard Entertainment</strong>.
+      Originally subtitled Heroes of Warcraft, Hearthstone builds upon the existing lore of the Warcraft series by using the
+      same elements, characters, and relics. It was first released for Microsoft Windows and macOS in March 2014, with ports
+      for iOS and Android releasing later that year.
+    </p>
+    <small>
+      <a href="https://en.wikipedia.org/wiki/Hearthstone" target="_blank">Read on Wikipedia</a>
+    </small>
+    <br>
+    <div class="btn">
+      <button class="play-button">
+      Play Hearthstone 🙃
+    </button>
+    </div>
+    <p class="description">Coded by Yuliia Poddiacha</p>
+  </div>
+  
+  
+
+  <script>
+    function play() {
+      let name = prompt('What is your name?');
+      let age = prompt('How old are you?');
+
+      if (age >= 7) {
+      alert(name + ', you can play Hearthstone 😃');
+      } else {
+      alert(name + ', you cannot play Hearthstone 😟');
+      }
+    }
+    let playButton = document.querySelector('.play-button');
+    playButton.addEventListener('click', play);
+  </script>
+</body>
+</html>
